@@ -1,7 +1,7 @@
 <template>
-  <v-row justify="center" align="center">
+  <v-row>
     <v-col>
-      Sarah Bawabe
+      OH HEY
     </v-col>
   </v-row>
 </template>
