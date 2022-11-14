@@ -59,7 +59,9 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <Nuxt />
+      <v-container class="pa-0" fluid>
+        <Nuxt />
+      </v-container>
     </v-main>
     <v-footer app absolute :color="THEME.blue" class="py-7">
       <v-container fluid>
@@ -70,13 +72,16 @@
             v-text="link.name"
           />
         </v-row>
-        <v-row class="mt-8" justify="center">
+        <v-row class="my-8" justify="center">
           <a class="px-2" href="https://github.com/sbawabe" target="_blank">
             <v-icon color="white" large>mdi-github</v-icon>
           </a>
           <a class="px-2" href="https://www.linkedin.com/in/sarah-bawabe/" target="_blank">
             <v-icon color="white" large>mdi-linkedin</v-icon>
           </a>
+        </v-row>
+        <v-row justify="center" class="white--text fine-print text-center">
+          <p class="mb-0">&copy; 2022 All images and content are property of Sarah Bawabe.</p>
         </v-row>
       </v-container>
     </v-footer>

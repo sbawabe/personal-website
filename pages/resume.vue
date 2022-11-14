@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pt-6">
+  <v-container fluid class="pa-6">
     <v-row justify-md="center">
       <ButtonPrimary
         nuxt

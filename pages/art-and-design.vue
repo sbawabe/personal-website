@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-0">
-    <h1 class="ml-3">art<b>&</b>design</h1>
+    <h1 class="ml-3">ART<b>&</b>DESIGN</h1>
     <Slideshow :max-tab="ART_SLIDES_1.length">
       <template v-for="slide in ART_SLIDES_1">
         <v-slide-item :key="slide.name">
