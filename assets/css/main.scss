@@ -1,3 +1,40 @@
+@import '~vuetify/src/styles/styles.sass';
+
 #app {
   font-family: 'JetBrains Mono', monospace;
+
+  .v-btn {
+    letter-spacing: unset;
+  }
+  .yellow-highlight {
+    text-shadow: 2px 2px #F4EE78;
+  }
+  h1 {
+    font-size: 84px;
+    margin: 12px 0;
+    line-height: 1;
+    font-weight: 100;
+    text-transform: uppercase;
+    b, strong {
+      color: #F4EE78;
+    }
+  }
+  h2 {
+    font-size: 36px;
+    margin: 12px 0;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+    b, strong {
+      color: #F16623;
+    }
+  }
+  @media #{map-get($display-breakpoints, 'sm-and-down')} {
+    h1 {
+      font-size: 54px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
 }
