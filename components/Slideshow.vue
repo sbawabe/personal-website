@@ -1,17 +1,22 @@
 <template>
-  <v-container fluid class="pa-0">
-    <v-slide-group
-      v-model="slideValue"
-      center-active
+  <v-container class="pa-0">
+    <Flicking
+      :options="{ circular: true, renderOnlyVisible: true }"
+      :cameraTag="'div'"
+      :cameraClass="'d-flex'"
+      :plugins="plugins"
     >
       <slot />
-    </v-slide-group>
+    </Flicking>
   </v-container>
 </template>
 <script lang="ts">
 import Vue from 'vue'
+import { Flicking } from '@egjs/vue-flicking'
+import { Fade, AutoPlay } from '@egjs/flicking-plugins'
 
 export default Vue.extend({
+  components: { Flicking },
   props: {
     maxTab: {
       type: Number,
@@ -23,31 +28,15 @@ export default Vue.extend({
   },
   data () {
     return {
-      slideValue: 0,
+      plugins: [
+        new Fade(),
+        new AutoPlay({ 
+          duration: 2000,
+          direction: this.reverse ? 'PREV' : 'NEXT',
+          stopOnHover: true
+        }),
+      ]
     }
   },
-  methods: {
-    incrementSlideValue () {
-      if (this.slideValue >= this.maxTab) {
-        this.slideValue = 0
-        return
-      }
-      this.slideValue += 1
-    },
-    decrementSlideValue () {
-      if (this.slideValue === 0) {
-        this.slideValue = this.maxTab - 1
-        return
-      }
-      this.slideValue -= 1
-    }
-  },
-  mounted () {
-    if (this.reverse) {
-      setInterval(this.decrementSlideValue, 2000);
-    } else {
-      setInterval(this.incrementSlideValue, 2000);
-    }
-  }
 })
 </script>

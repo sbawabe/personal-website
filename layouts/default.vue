@@ -31,9 +31,10 @@
     <v-navigation-drawer
       v-model="drawer"
       app
+      class="py-6"
       right
       temporary
-      class="py-6"
+      :aria-hidden="drawer"
     >
       <v-container>
         <v-row justify="end" class="mx-0">

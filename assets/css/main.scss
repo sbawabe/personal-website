@@ -31,6 +31,26 @@
       color: #F16623;
     }
   }
+  h3 {
+    text-transform: uppercase;
+    // @extend .yellow-highlight;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    b, strong, a {
+      font-weight: 600;
+    }
+  }
+
+  .blue--bold--paragraph {
+    p {
+      b, strong {
+        color: #1769A4;
+      }
+    }
+  }
   @media #{map-get($display-breakpoints, 'sm-and-down')} {
     h1 {
       font-size: 54px;
