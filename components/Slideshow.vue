@@ -1,14 +1,15 @@
 <template>
-  <v-container class="pa-0">
+  <div class="pa-0 overflow-hidden">
     <Flicking
-      :options="{ circular: true, renderOnlyVisible: true }"
+      hideBeforeInit
+      :options="{ circular: true }"
       :cameraTag="'div'"
       :cameraClass="'d-flex'"
       :plugins="plugins"
     >
       <slot />
     </Flicking>
-  </v-container>
+  </div>
 </template>
 <script lang="ts">
 import Vue from 'vue'

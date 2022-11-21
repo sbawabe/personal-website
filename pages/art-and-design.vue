@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-0 overflow-hidden">
+  <pass-through>
     <h1 class="ml-3">ART<b>&</b>DESIGN</h1>
     <Slideshow :max-tab="ART_SLIDES_1.length">
       <div v-for="slide in ART_SLIDES_1" class="flicking-panel pa-0 px-1" :key="slide.name">
@@ -16,17 +16,17 @@
         <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
       </div>
     </Slideshow>
-    <v-row justify="center" class="my-5">
+    <v-row justify="center" class="my-5 flex-wrap">
       <template v-for="slide in STICKER_LOGO_DESIGNS">
         <v-col cols="auto" class="py-0" :key="slide.name">
           <img
             :src="slide.src"
             :aria-label="slide.name"
-            :style="{height: '90px', width: 'auto'}">
+            :style="{height: '100px', width: 'auto'}">
         </v-col>
       </template>
     </v-row>
-  </v-container>
+  </pass-through>
 </template>
 <script lang="ts">
 import Vue from 'vue'
@@ -56,7 +56,7 @@ const ART_SLIDES_2 = [
 const POSTER_DESIGNS = [
   { src: '/design/caitlin_gammaPhi-min.jpg', name: 'Gamma Phi', description: '', size: ''},
   { src: '/design/coffeeConvo-min.jpg', name: 'Coffee Conversations', description: '', size: ''},
-  { src: '/design/joinListserv-min.jpg', name: 'Join Listserv', description: '', size: ''},
+  { src: '/design/joinListserv.jpeg', name: 'Join Listserv', description: '', size: ''},
   { src: '/design/gameNight-01-min.jpg', name: 'Game Night', description: '', size: ''},
   { src: '/design/empty_calendars-01-min.png', name: 'Empty Calendars', description: '', size: ''},
   { src: '/design/lazyLunches-min.jpg', name: 'Lazy Lunches', description: '', size: ''},
