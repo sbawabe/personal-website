@@ -1,4 +1,5 @@
 export default {
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'sarah bawabe',
@@ -64,6 +65,7 @@ export default {
   },
 
   router: {
-    linkActiveClass: 'nav-link--active'
+    linkActiveClass: 'nav-link--active',
+    base: '/personal-website/',
   }
 }
