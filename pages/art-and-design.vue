@@ -1,5 +1,5 @@
 <template>
-  <pass-through>
+  <v-row>
     <h1 class="ml-3">ART<b>&</b>DESIGN</h1>
     <Slideshow :max-tab="ART_SLIDES_1.length">
       <div v-for="slide in ART_SLIDES_1" class="flicking-panel pa-0 px-1" :key="slide.name">
@@ -26,7 +26,7 @@
         </v-col>
       </template>
     </v-row>
-  </pass-through>
+  </v-row>
 </template>
 <script lang="ts">
 import Vue from 'vue'
