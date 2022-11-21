@@ -2,7 +2,7 @@
   <div class="pa-0 overflow-hidden">
     <Flicking
       hideBeforeInit
-      :options="{ circular: true }"
+      :options="{ circular: true, renderOnlyVisible: true }"
       :cameraTag="'div'"
       :cameraClass="'d-flex'"
       :plugins="plugins"
