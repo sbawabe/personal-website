@@ -66,6 +66,6 @@ export default {
 
   router: {
     linkActiveClass: 'nav-link--active',
-    base: '/personal-website/',
+    // base: '/personal-website/',
   }
 }
