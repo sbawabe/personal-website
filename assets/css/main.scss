@@ -1,5 +1,12 @@
 @import '~vuetify/src/styles/styles.sass';
 
+.page-enter-active, .page-leave-active {
+  transition: opacity 0.5s;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}
+
 #app {
   font-family: 'JetBrains Mono', monospace;
 

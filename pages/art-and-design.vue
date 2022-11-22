@@ -1,6 +1,6 @@
 <template>
-  <v-row>
-    <h1 class="ml-3">ART<b>&</b>DESIGN</h1>
+  <v-row class="mt-0">
+    <h1 class="ml-6">ART<b>&</b>DESIGN</h1>
     <Slideshow :max-tab="ART_SLIDES_1.length">
       <div v-for="slide in ART_SLIDES_1" class="flicking-panel pa-0 px-1" :key="slide.name">
         <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">

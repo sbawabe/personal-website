@@ -38,18 +38,17 @@ export default Vue.extend({
   height: auto;
 }
 .delay-1 {
-  animation-delay: 0.2s;
+  animation-duration: 2s;
 }
 .delay-2 {
-  animation-delay: 0.4s;
+  animation-duration: 2.5s;
 }
 
 @keyframes animatebottom{from{bottom:-100vh;opacity:0} to{bottom:0; opacity:1}}
 .hello-message {
   position: relative;
   animation-name: animatebottom;
-  animation-duration: 1.5s;
-  animation-delay: 1s;
+  animation-duration: 2s;
 }
 
 </style>
