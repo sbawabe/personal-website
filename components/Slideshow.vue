@@ -14,7 +14,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { Flicking } from '@egjs/vue-flicking'
-import { Fade, AutoPlay } from '@egjs/flicking-plugins'
+import { AutoPlay } from '@egjs/flicking-plugins'
 
 export default Vue.extend({
   components: { Flicking },
@@ -30,7 +30,6 @@ export default Vue.extend({
   data () {
     return {
       plugins: [
-        new Fade(),
         new AutoPlay({ 
           duration: 2000,
           direction: this.reverse ? 'PREV' : 'NEXT',
