@@ -6,6 +6,7 @@
       :cameraTag="'div'"
       :cameraClass="'d-flex'"
       :plugins="plugins"
+      style="cursor: grab;"
     >
       <slot />
     </Flicking>
@@ -39,4 +40,4 @@ export default Vue.extend({
     }
   },
 })
-</script>
+</script>d
