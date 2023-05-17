@@ -17,7 +17,7 @@
         </a>
       </v-row>
       <v-row justify="center" class="white--text fine-print text-center">
-        <p class="mb-0">&copy; 2022 All images and content are property of Sarah Bawabe.</p>
+        <p class="mb-0">&copy; 2023 All images and content are property of Sarah Bawabe.</p>
       </v-row>
     </v-container>
   </v-footer>
