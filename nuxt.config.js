@@ -9,8 +9,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: 'My name is Sarah, and I\'m a Software Engineer based in New York City.' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:title', property: 'og:title', content: 'Sarah Bawabe' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Sarah Bawabe' },
+      { hid: 'og:type', property: 'og:type', content: 'page' },
+      { hid: 'og:image', property: 'og:image', content: '/social.png' },
+      { hid: 'og:url', property: 'og:url', content: 'https://sarahbawabe.com' },
+      { hid: 'og:description', name: 'og:description', content: 'My name is Sarah, and I\'m a Software Engineer based in New York City.' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Sarah Bawabe' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'My name is Sarah, and I\'m a Software Engineer based in New York City.' },
+      { hid: 'twitter:image', name: 'twitter:image', content: '/social.png' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' },
