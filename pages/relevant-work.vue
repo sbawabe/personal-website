@@ -82,7 +82,7 @@
         <p>
         I also participated in physics research during my time at Brown, under the supervisions of Professor Jim Gates
         (2018) and Professor Stephon Alexander (2019-2021). With Dr. Stephon Alexander as my advisor, my undergraduate thesis
-        combined Deep Learning and Astrophysics, by using a graph network to view large scale structure of the universe.
+        combined Deep Learning and Astrophysics, by using a graph network to view the large scale structure of the universe.
         </p>
         <ButtonPrimary
           href="/thesis_bawabe.pdf"

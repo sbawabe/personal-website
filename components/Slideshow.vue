@@ -1,43 +1,27 @@
 <template>
-  <div class="pa-0 overflow-hidden">
-    <Flicking
-      hideBeforeInit
-      :options="{ circular: true, renderOnlyVisible: true }"
-      :cameraTag="'div'"
-      :cameraClass="'d-flex'"
-      :plugins="plugins"
-      style="cursor: grab;"
-    >
-      <slot />
-    </Flicking>
-  </div>
+  <Flicking
+    ref="flicking"
+    :options="{
+      autoResize: true,
+      useResizeObserver: true,
+      align: 'prev',
+      bound: true,
+      circular: true,
+    }"
+    style="cursor: grab;"
+  >
+    <slot />
+  </Flicking>
 </template>
 <script lang="ts">
 import Vue from 'vue'
 import { Flicking } from '@egjs/vue-flicking'
-// import { AutoPlay } from '@egjs/flicking-plugins'
+import '@egjs/vue-flicking/dist/flicking.css'
 
 export default Vue.extend({
   components: { Flicking },
-  props: {
-    maxTab: {
-      type: Number,
-      required: true,
-    },
-    reverse: {
-      type: Boolean,
-    }
-  },
-  data () {
-    return {
-      plugins: [
-        // new AutoPlay({ 
-        //   duration: 2000,
-        //   direction: this.reverse ? 'PREV' : 'NEXT',
-        //   stopOnHover: true
-        // }),
-      ]
-    }
+  mounted () {
+    (this.$refs.flicking as any).moveTo(0)
   },
 })
-</script>d
+</script>
