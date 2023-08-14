@@ -1,21 +1,24 @@
 <template>
+<v-container fluid class="overflow-hidden pl-0" style="max-width: 100vw">
   <v-row class="mt-0">
-    <h1 class="ml-6">ART<b>&</b>DESIGN</h1>
-    <Slideshow>
-      <div v-for="slide in ART_SLIDES_1" class="flicking-panel pa-0 px-1" :key="slide.name">
-        <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
-      </div>
-    </Slideshow>
-    <Slideshow>
-      <div v-for="slide in ART_SLIDES_2" class="flicking-panel pa-0 px-1" :key="slide.name">
-        <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
-      </div>
-    </Slideshow>
-    <Slideshow>
-      <div v-for="slide in POSTER_DESIGNS" class="flicking-panel pa-0 px-1" :key="slide.name">
-        <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
-      </div>
-    </Slideshow>
+    <v-col class="pa-0 overflow-hidden" >
+      <h1 class="ml-6">ART<b>&</b>DESIGN</h1>
+      <Slideshow>
+        <div v-for="slide in ART_SLIDES_1" class="flicking-panel pa-0 px-1" :key="slide.name">
+          <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
+        </div>
+      </Slideshow>
+      <Slideshow>
+        <div v-for="slide in ART_SLIDES_2" class="flicking-panel pa-0 px-1" :key="slide.name">
+          <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
+        </div>
+      </Slideshow>
+      <Slideshow>
+        <div v-for="slide in POSTER_DESIGNS" class="flicking-panel pa-0 px-1" :key="slide.name">
+          <img :src="slide.src" :aria-label="slide.name" style="height: min(60vw, 350px); width: auto;">
+        </div>
+      </Slideshow>
+    </v-col>
     <v-row justify="center" class="my-5 flex-wrap">
       <template v-for="slide in STICKER_LOGO_DESIGNS">
         <v-col cols="auto" class="py-0" :key="slide.name">
@@ -27,6 +30,7 @@
       </template>
     </v-row>
   </v-row>
+</v-container>
 </template>
 <script lang="ts">
 import Vue from 'vue'

@@ -20,8 +20,5 @@ import '@egjs/vue-flicking/dist/flicking.css'
 
 export default Vue.extend({
   components: { Flicking },
-  mounted () {
-    (this.$refs.flicking as any).moveTo(0)
-  },
 })
 </script>
