@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.1 181.17">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .04em;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        fill: #f4ee78;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: Sutturah-Fat, Sutturah;
+        font-size: 97.67px;
+        font-weight: 900;
+      }
+
+      .cls-5 {
+        fill: #231f20;
+      }
+
+      .cls-6 {
+        letter-spacing: 0em;
+      }
+
+      .cls-7 {
+        letter-spacing: .01em;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <text class="cls-4" transform="translate(8.47 89.88) rotate(-.03)"><tspan x="0" y="0">s</tspan><tspan class="cls-7" x="46.2" y="0">a</tspan><tspan x="96.3" y="0">r</tspan><tspan class="cls-2" x="134.3" y="0">a</tspan><tspan class="cls-1" x="184.01" y="0">h</tspan></text>
+      <text class="cls-4" transform="translate(58.87 148.75)"><tspan x="0" y="0">baw</tspan><tspan class="cls-3" x="178.15" y="0">a</tspan><tspan x="227.87" y="0">b</tspan><tspan class="cls-1" x="280.61" y="0">e</tspan></text>
+    </g>
+    <g>
+      <text class="cls-5" transform="translate(.04 83.15) rotate(-.03)"><tspan x="0" y="0">s</tspan><tspan class="cls-7" x="46.2" y="0">a</tspan><tspan x="96.3" y="0">r</tspan><tspan class="cls-2" x="134.3" y="0">a</tspan><tspan class="cls-1" x="184.01" y="0">h</tspan></text>
+      <text class="cls-5" transform="translate(50.44 142.02)"><tspan x="0" y="0">baw</tspan><tspan class="cls-2" x="178.15" y="0">a</tspan><tspan class="cls-6" x="227.87" y="0">b</tspan><tspan class="cls-1" x="280.61" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>
