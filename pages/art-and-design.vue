@@ -19,16 +19,16 @@
         </div>
       </Slideshow>
     </v-col>
-    <v-row justify="center" class="my-5 flex-wrap">
-      <template v-for="slide in STICKER_LOGO_DESIGNS">
-        <v-col cols="auto" class="py-0" :key="slide.name">
-          <img
-            :src="slide.src"
-            :aria-label="slide.name"
-            :style="{height: '100px', width: 'auto'}">
-        </v-col>
-      </template>
-    </v-row>
+  </v-row>
+  <v-row justify="center" class="mt-10 my-5 flex-wrap">
+    <template v-for="slide in STICKER_LOGO_DESIGNS">
+      <v-col cols="auto" class="py-0" :key="slide.name">
+        <img
+          :src="slide.src"
+          :aria-label="slide.name"
+          :style="{height: '100px', width: 'auto'}">
+      </v-col>
+    </template>
   </v-row>
 </v-container>
 </template>
