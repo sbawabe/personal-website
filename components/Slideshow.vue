@@ -5,20 +5,19 @@
       autoResize: true,
       useResizeObserver: true,
       align: 'prev',
-      bound: true,
       circular: true,
     }"
-    style="cursor: grab;"
+    style="cursor: grab"
   >
     <slot />
   </Flicking>
 </template>
 <script lang="ts">
-import Vue from 'vue'
-import { Flicking } from '@egjs/vue-flicking'
-import '@egjs/vue-flicking/dist/flicking.css'
+import Vue from "vue";
+import { Flicking } from "@egjs/vue-flicking";
+import "@egjs/vue-flicking/dist/flicking.css";
 
 export default Vue.extend({
   components: { Flicking },
-})
+});
 </script>
